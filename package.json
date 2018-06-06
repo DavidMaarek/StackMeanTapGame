@@ -1,0 +1,24 @@
+{
+  "name": "stackmeantapgame",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidMaarek/StackMeanTapGame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidMaarek/StackMeanTapGame/issues"
+  },
+  "homepage": "https://github.com/DavidMaarek/StackMeanTapGame#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5"
+  }
+}
