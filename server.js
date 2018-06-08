@@ -15,7 +15,8 @@ let app = express();
 
 
 // Définir le dossier static de la partie frontend
-app.use(express.static(path.join(__dirname, 'client')));
+app.set('views', path.join(__dirname, 'www'));
+app.use(express.static(path.join(__dirname, 'www')));
 
 // Configurer body-parser
 app.use(bodyParser.json());

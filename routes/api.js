@@ -1,3 +1,9 @@
+// Configuration MongoDB
+let mongodb = require('mongodb');
+let ObjectId = mongodb.ObjectID;
+let MongoClient = mongodb.MongoClient;
+let mongodbUrl = 'mongodb://localhost:27017/tapgame';
+
 // Configuration du module
 let express = require('express');
 let router = express.Router();
