@@ -1,1 +1,108 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    margin: auto;
+    max-width: 365px;
+}
+
+.title_form{
+    border: 1px solid darkmagenta;
+    cursor: pointer;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form{
+    background: #eee;
+    padding: 5px;
+}
+
+form label {
+    display: block;
+}
+
+form input {
+    width: 90%;
+}
+
+form .subtitle {
+    color: #663399;
+}
+
+footer{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.button{
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+    padding-top: 100%;
+    width: 100%;
+}
+
+.button.green{
+    background: darkgreen;
+}
+
+.state{
+    margin-top: 15px;
+    background: gray;
+    height: 25px;
+    width: 100%;
+    position: relative;
+}
+
+.state:before{
+    background: darkred;
+    content: '';
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.state-0:before{
+    width: 0;
+}
+.state-1:before{
+    width: 10%;
+}
+.state-2:before{
+    width: 20%;
+}
+.state-3:before{
+    width: 30%;
+}
+.state-4:before{
+    width: 40%;
+}
+.state-5:before{
+    width: 50%;
+}
+.state-6:before{
+    width: 60%;
+}
+.state-7:before{
+    width: 70%;
+}
+.state-8:before{
+    width: 80%;
+}
+.state-9:before{
+    width: 90%;
+}
+.state-10:before{
+    width: 100%;
+}
+
+ul li {
+    list-style-type: none;
+    line-height: 30px;
+}

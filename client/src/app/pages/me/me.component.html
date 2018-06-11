@@ -1,0 +1,10 @@
+<header>
+  <h1>Bonjour {{ user.firstName }} {{ user.lastName }}</h1>
+  <h2>You have 10 seconds to tap, ready? steady? tap!</h2>
+  <a routerLink="/tap" style="margin-right: 5px;">Scores</a>
+  <a href="javascript:void(0)" (click)="logOut()">Logout</a>
+</header>
+<main>
+  <div class="button" [ngClass]="{'green': color}" (click)="startGame()"></div>
+  <div class="state state-{{ count }}"></div>
+</main>

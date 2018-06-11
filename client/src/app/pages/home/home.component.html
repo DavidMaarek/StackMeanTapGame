@@ -1,0 +1,50 @@
+<header>
+  <section>
+    <h1>Welcome On <em>TapBoard</em></h1>
+    <p>Login or register to start tapping</p>
+  </section>
+</header>
+
+<div id="login" Class="container">
+  <div class="title_form" (click)="show_form = 'login'">Login</div>
+
+  <form *ngIf="show_form === 'login'">
+      <label for="email_login">Email</label>
+      <input type="email" [(ngModel)]="userLogin.email" name="email_login" id="email_login" required>
+
+      <label for="password_login">Password</label>
+      <input type="password" [(ngModel)]="userLogin.password" name="password_login" id="password_login" required>
+
+    <div class="submit">
+      <button type="submit" (click)="onSubmitLogin()">Connexion</button>
+    </div>
+  </form>
+</div>
+
+<div id="register" Class="container">
+  <div class="title_form" (click)="show_form = 'register'">Register</div>
+  <form *ngIf="show_form === 'register'">
+    <div class="subtitle">About you</div>
+
+      <label for="first_name">First name</label>
+      <input type="text" [(ngModel)]="userRegister.firstName" name="first_name" id="first_name" required>
+
+      <label for="last_name">Last name</label>
+      <input type="text" [(ngModel)]="userRegister.lastName" name="last_name" id="last_name" required>
+
+    <div class="subtitle">Login informations</div>
+
+      <label for="email_register">Email</label>
+      <input type="email" [(ngModel)]="userRegister.email" name="email_register" id="email_register" required>
+
+      <label for="password">Password</label>
+      <input type="password" [(ngModel)]="userRegister.password" name="password" id="password" required>
+
+      <input type="checkbox" [(ngModel)]="cgv" name="cgv" id="cgv" required>
+      <label for="cgv">I accept the terms and conditions</label>
+
+    <div class="submit">
+      <button type="submit" (click)="onSubmitRegister()">Inscription</button>
+    </div>
+  </form>
+</div>
